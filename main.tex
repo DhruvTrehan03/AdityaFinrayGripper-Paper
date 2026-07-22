@@ -18,7 +18,10 @@
 \usepackage{csquotes}
 \usepackage[hidelinks]{hyperref}
 \usepackage[nameinlink,noabbrev]{cleveref}
-\usepackage[inkscapelatex=false]{svg}
+\usepackage[
+  inkscapelatex=false,
+  inkscapepath=/home/dhruv/AdityaFinrayGripper/Paper/
+]{svg}
 \usepackage[
   backend=biber,
   style=numeric,
@@ -56,12 +59,6 @@ Abstract goes here.
 
 \input{sections/00_figure_plan}
 \input{sections/01_introduction}
-\begin{figure}
-    \centering
-    \includesvg[width=\linewidth]{figures/Outline.svg}
-    \caption{Caption}
-    \label{fig:placeholder}
-\end{figure}
 \input{sections/02_related_work}
 \input{sections/03_methods}
 \input{sections/04_results}
